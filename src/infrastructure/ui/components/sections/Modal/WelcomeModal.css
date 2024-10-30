@@ -1,0 +1,40 @@
+// src/components/WelcomeModal/WelcomeModal.module.scss
+.customModalContent {
+  background: linear-gradient(to bottom, #7D55F8, #AF9CFF);
+  border: none;
+  padding: 15px;
+  border-radius: 25px;
+  display: flex; // added
+  flex-direction: column; // added
+  align-items: center; // added
+
+  .modalContent {
+    background-color: #7d55f8 !important;
+    border-radius: 45px;
+    text-align: center;
+  }
+
+  .modalImage {
+    width: 100%;
+    height: auto;
+    max-height: 350px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  .modalButton {
+    background-color: #7d55f8;
+    color: #ffffff;
+    border: none;
+    margin-top: 2rem;
+    padding: 0.5rem 0.5rem;
+    border-radius: 20px;
+    font-weight: bold;
+    width: 250px;
+    @media (max-width: 600px) {
+      padding: 0.25rem 1rem;
+      font-size: 0.8rem;
+    }
+  }
+}

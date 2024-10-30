@@ -1,0 +1,46 @@
+{
+  "name": "mkt",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@auth0/auth0-react": "^2.2.4",
+    "@radix-ui/react-dropdown-menu": "^2.1.2",
+    "@radix-ui/react-slot": "^1.1.0",
+    "axios": "^1.7.7",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.11.9",
+    "inversify": "^6.0.3",
+    "jsonwebtoken": "^9.0.2",
+    "lucide-react": "^0.453.0",
+    "next": "^14.0.1",
+    "react": "^18",
+    "react-bootstrap": "^2.10.5",
+    "react-dom": "^18",
+    "react-router-dom": "^6.27.0",
+    "react-toastify": "^10.0.6",
+    "tailwind-merge": "^2.5.4",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.7",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.4.20",
+    "css-loader": "^7.1.2",
+    "eslint": "^8",
+    "eslint-config-next": "15.0.1",
+    "postcss": "^8.4.47",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-preset-env": "^10.0.8",
+    "tailwindcss": "^3.4.14",
+    "typescript": "^5"
+  }
+}

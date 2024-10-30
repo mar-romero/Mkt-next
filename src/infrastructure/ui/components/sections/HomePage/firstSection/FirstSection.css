@@ -1,0 +1,98 @@
+.firstSection {
+  background-image: linear-gradient(to bottom, #1D3661, #7044f775);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-left: 2%;
+  margin-left: 0; // Cambiado para no desplazar el contenido en pantallas pequeñas
+
+  .container {
+    position: relative;
+    z-index: 2;
+    height: 50vh;
+    width: 100%; // Asegura que el contenedor ocupe todo el ancho disponible
+    box-sizing: border-box; // Asegura que el padding y el border no aumenten el ancho total
+  }
+
+  .firstTitle, h1 {
+    font-size: 2.0rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    width: 80%;
+    margin-top: 60px;
+
+    @media (max-width: 768px) {
+      font-size: 2rem; // Reduce el tamaño de la fuente en pantallas pequeñas
+    }
+  }
+
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+
+    @media (max-width: 768px) {
+      font-size: 1rem; // Reduce el tamaño de la fuente en pantallas pequeñas
+    }
+  }
+
+  .btn {
+    background-color: #1d3661be;
+    border: none;
+    margin-left: 0; // Cambiado para no desplazar el botón en pantallas pequeñas
+    width: 100%; // Cambiado para que el botón ocupe todo el ancho disponible
+    height: auto; // Cambiado para que el botón tenga una altura automática
+    color: white;
+    border-radius: 3rem;
+    padding: 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #1d3661;
+    }
+  }
+
+ .mainImage {
+  position: absolute;
+  border-bottom-left-radius: 50%; // Aumenta el radio del borde para un efecto más redondeado
+  width: 100%; // Asegura que la imagen ocupe todo el ancho disponible
+  height: 50vh; // Asegura que la imagen ocupe la mitad de la altura de la pantalla
+  top: 0; // Asegura que la imagen comienza en la parte superior de la sección
+  right: 0; // Asegura que la imagen se alinea con el borde derecho
+  object-fit: cover; // Asegura que la imagen cubra todo el espacio disponible sin distorsionarse
+
+  @media (min-width: 768px) {
+    width: 50%; // Restaura el ancho original en pantallas medianas
+    right: 0; // Restaura la posición original en pantallas medianas
+  }
+}
+
+  // Estilos para los íconos flotantes
+  .floatingIcon {
+    position: absolute;
+    z-index: 3;
+  }
+
+  .sombrero {
+    top: -10%;
+    left: 35%;
+  }
+
+  .lapiz {
+  left: 45%;
+  width: 14%;
+  top: 45%;
+  transform: rotate(30deg);
+  }
+
+  .mouse {
+    top: 69%;
+    bottom: 0%;
+    right: 65%;
+    width: 5%;
+  }
+}

@@ -1,0 +1,116 @@
+/* src/infrastructure/ui/components/sections/Login/login.module.css */
+.passwordStrength {
+  margin-top: 8px;
+  padding: 12px;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+}
+
+.passwordStrength .requirements h4 {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.passwordStrength .requirements ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.passwordStrength .requirements ul li {
+  font-size: 12px;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.passwordStrength .requirements ul li::before {
+  content: '';
+  width: 14px;
+  height: 14px;
+  margin-right: 8px;
+  border-radius: 50%;
+}
+
+.passwordStrength .requirements ul li.valid {
+  color: #2e7d32;
+}
+
+.passwordStrength .requirements ul li.valid::before {
+  background-color: #4caf50;
+}
+
+.passwordStrength .requirements ul li.invalid {
+  color: #c62828;
+}
+
+.passwordStrength .requirements ul li.invalid::before {
+  background-color: #ef5350;
+}
+
+.centralDivLogin {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 91vh;
+}
+
+.centralDivLogin .registrationForm {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  margin-bottom: 250px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.384), rgba(0, 0, 0, 0));
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: white;
+}
+
+.centralDivLogin .registrationForm .formControl {
+  width: 100%;
+  padding: 10px;
+  flex: 1;
+  margin-bottom: 20px;
+  background-color: #af9cff;
+  border: none;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+}
+
+.centralDivLogin .registrationForm .btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #7c54f7;
+  color: #bfb0cf;
+  border: none;
+  border-radius: 1rem;
+  box-sizing: border-box;
+}
+
+.centralDivLogin .registrationForm .btn:hover {
+  background-color: #7d54f798;
+}
+
+.centralDivLogin .registrationForm .showHideButton {
+  margin-left: 10px;
+  height: 100%;
+  border: none;
+  background-color: #7c54f7;
+  color: #bfb0cf;
+  border-radius: 0.5rem;
+  padding: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.centralDivLogin .registrationForm .showHideButton:hover {
+  background-color: #7d54f798;
+}
+
+.centralDivLogin .registrationForm .showHideButton .btnSecondary {
+  border: none;
+}

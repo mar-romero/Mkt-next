@@ -1,0 +1,34 @@
+.miCuentaModal {
+  :global(.modal-content) {
+    background-color: #7c54f7;
+    color: white;
+  }
+
+  :global(.form-control) {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: none;
+  }
+
+  .editarBtn {
+    color: white;
+    text-decoration: underline;
+    padding: 0;
+  }
+  
+  .custom-button {
+    background-color: #7c54f7; /* Mismo color que el fondo */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px; /* Tamaño de la fuente más grande */
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .custom-button::after {
+    content: ' ▼'; /* Flecha */
+    font-size: 20px;
+  }
+}

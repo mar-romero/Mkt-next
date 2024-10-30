@@ -1,0 +1,13 @@
+.searchBar {
+background-color: transparent;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 3vh;
+  @media (max-width: 768px) {
+    width: 80%;
+  }
+  .formControl {
+    width: calc(100% - 120px);
+  }
+
+}

@@ -1,0 +1,61 @@
+.courseCard {
+  position: relative; // added
+  background-color: #5531c3;
+  color: #ffffff;
+  width: 80vw; // changed
+  max-width: 400px; // added
+  margin: 50px auto; // changed
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; // added
+  padding-bottom: 3rem; // added
+  border: none;
+  border-radius: 35px;
+  height: 48vh; // changed
+  text-align: center;
+  .courseCardImg {
+    margin-top: 4%;
+    width: 75%; // added
+    height: 75%; // changed
+    max-height: 30vh; // added
+    object-fit: cover;
+  }
+  .courseCardText {
+    padding: 1rem;
+    p {
+      font-size: 1.1rem;
+      margin: 0;
+      
+    }
+  }
+  .btn {
+    position: absolute; // changed
+    bottom: -2rem; // changed
+    left: 4rem; // changed
+    width: 70%; // changed
+    padding: 1rem; // changed
+    display: block;
+    text-align: center;
+    background: linear-gradient(to bottom, #ffffffee, rgba(255, 255, 255, 0.5));
+    color: #7c54f7;
+    border: none;
+    border-radius: 10rem;
+    box-sizing: border-box;
+    font-weight: bold;
+    &:hover {
+      background-color: #f5f2ff;
+      color: #7c54f7;
+    }
+    @media (max-width: 768px) {
+      font-size: 13px;
+      padding: 7px;
+      bottom: -1rem; // changed
+      width: 70%; // changed
+    }
+  }
+  @media (max-width: 768px) {
+    width: 100%; // changed
+    margin-bottom: 25px;
+  }
+}

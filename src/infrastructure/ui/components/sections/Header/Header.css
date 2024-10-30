@@ -1,0 +1,64 @@
+.navbarCustom {
+  background-color: transparent;
+
+  .navbarBrand,
+  .navLink {
+    color: #fff !important; // color del texto
+    text-decoration: none !important;
+    padding: 15px;
+  }
+
+  .navLink:hover {
+    background-color: #603ec5f1; /* Mismo color que el fondo */
+    color: white !important;
+    cursor: pointer;
+    border-radius: 25px;
+  }
+
+  .navLink.active {
+    color: #f11303 !important; // color del texto activo
+  }
+
+  .loginLink {
+    margin-left: auto;
+    padding-right: 20px;
+  }
+
+  .navLinkButton {
+    background: none;
+    border: none;
+    color: #fff !important;
+    padding: 15px;
+    cursor: pointer;
+    text-decoration: none !important;
+  }
+
+  .dropdownToggleCustom {
+    background-color: transparent; /* Mismo color que el fondo */
+    color: white !important;
+    border: none;
+    font-size: 20px; /* Tamaño de la fuente más grande */
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  .dropdownToggleCustom:hover {
+    background-color: #603ec5f1; /* Mismo color que el fondo */
+    border-radius: 25px;
+
+  }
+
+  .dropdown-menu {
+    background-color: #7c54f7; /* Fondo del menú desplegable */
+    color: white;
+  }
+
+  .dropdown-item {
+    color: white;
+  }
+
+  .dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+}

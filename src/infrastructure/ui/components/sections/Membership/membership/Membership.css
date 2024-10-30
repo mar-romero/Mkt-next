@@ -1,0 +1,111 @@
+.membership {
+  background-color: transparent;
+  color: white;
+
+  .container {
+    display: flex; // Añade flexbox
+    flex-wrap: wrap; // Permite que los elementos se envuelvan en varias líneas
+    justify-content: center; // Centra los elementos horizontalmente
+    align-items: center; // Centra los elementos verticalmente
+    margin: 0 auto; // Cambiado para centrar en todas las pantallas
+    padding: 0 1rem; // Agregado padding para evitar el pegado a los bordes en pantallas pequeñas  }
+    padding-top: 10rem;
+    padding-bottom: 11rem;
+    .card {
+      background-color: #af9cff;
+      padding: 1rem;
+      position: relative;
+      min-width: 300px;
+      min-height: 420px;
+      text-align: center;
+      padding-bottom: 4rem;
+      border-radius: 8px;
+      flex: 1 0 100%; // Cambiado para ocupar el 100% del ancho en pantallas pequeñas
+      box-sizing: border-box; // Asegura que el padding y el margin no aumenten el tamaño de las tarjetas
+      height: auto; // Asegura que todas las tarjetas tengan la misma altura
+      display: flex; // Añade flexbox
+      flex-direction: column; // Alinea los elementos verticalmente
+      justify-content: space-between; // Distribuye el espacio de manera uniforme entre los elementos
+      margin-top: 15rem;
+      @media (min-width: 768px) {
+        flex: 1 0 calc(50% - 2rem); // Ocupa el 50% del ancho en pantallas medianas
+        margin: 2rem;
+      }
+      @media (min-width: 1024px) {
+        flex: 1 0 calc(33.33% - 2rem); // Ocupa el 33.33% del ancho en pantallas grandes
+      }
+    }
+    .cardMiddle {
+      background-color: #5531c3 !important;
+    }
+    .cadDark {
+      background-color: #1d3661 !important;
+    }
+    .membershipBtn {
+      background-color: #7c54f7; // color del botón
+      border-radius: 10px; // esquinas redondeadas
+      font-weight: bold; // Hace el texto negrita
+      font-size: 1.5rem; // Aumenta el tamaño del texto
+      text-align: center; // Centra el texto horizontalmente
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 10px;
+      width: 95%;
+      margin: 0 auto; // Centra el botón horizontalmente
+      p {
+        font-size: 1.5rem;
+      }
+    }
+    .icon {
+      position: absolute; // Añade posicionamiento absoluto al botón
+      bottom: 23rem; // Posiciona el botón parcialmente fuera del contenedor
+      left: 55px; // Alinea el botón a la izquierda
+      right: 0; // Alinea el botón a la derecha
+    }
+    .iconMiddle {
+      position: absolute; // Añade posicionamiento absoluto al botón
+      bottom: 24rem; // Posiciona el botón parcialmente fuera del contenedor
+      left: -15px; // Alinea el botón a la izquierda
+      right: 0; // Alinea el botón a la derecha
+    }
+    h3 {
+      font-size: 1.5rem;
+      margin-top: 4rem;
+    }
+
+    p {
+      font-size: 0.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .btn {
+      display: block;
+      width: 75%;
+      padding: 15px;
+      margin-top: 25px;
+      background: linear-gradient(to bottom, #ffffffee, rgb(255, 255, 255));
+      color: #7c54f7;
+      border: none;
+      border-radius: 10rem;
+      box-sizing: border-box;
+      font-weight: bold;
+      position: absolute; // Añade posicionamiento absoluto al botón
+      bottom: -15px; // Posiciona el botón parcialmente fuera del contenedor
+      left: 55px; // Alinea el botón a la izquierda
+      right: 0; // Alinea el botón a la derecha
+      &:hover {
+        background-color: #f5f2ff;
+        color: #7c54f7;
+      }
+      @media (max-width: 768px) {
+        font-size: 13px;
+        padding: 7px;
+      }
+    }
+    @media (max-width: 768px) {
+      width: 250px;
+      padding-top: 0.1rem;
+      margin-bottom: 25px;
+    }
+  }
+}
