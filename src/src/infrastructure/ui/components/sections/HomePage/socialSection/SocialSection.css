@@ -1,0 +1,17 @@
+.socialSection { 
+  margin-top: 50px; /* Puedes ajustar según lo necesites */
+  margin-bottom: 50px; 
+}
+
+.socialIconsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Alinea verticalmente los íconos */
+}
+
+.socialIcon {
+  img {
+    width: 42px; /* Aumenta un 20% desde 35px */
+    height: 42px; /* Aumenta un 20% desde 35px */
+  }
+}

@@ -1,0 +1,85 @@
+.CarouselCard {
+  background-color: transparent;
+  width: 95vw;
+  
+  .item{
+    padding-left: 20px;
+  }
+  .carousel {
+    margin-top: 20px;
+    background: transparent;
+    width: 90vw;
+    
+  }
+  
+  .carouselIn {
+    background-color: transparent;
+    border: none;
+    width: 20vw;
+    margin-left: 200px;
+  }
+  
+  .carouselItem {
+    width: 20vw;
+    text-align: center;
+    background-color: #f8f8f8;
+    color: #ffffff;
+    margin-top: 50px;
+    border: none;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  .carouselTextIn {
+    background-color: #5531c2;
+    color: #ffffff;
+    border: none;
+    height: 250px;
+    width: 20vw;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    font-family: 'Arial', sans-serif;
+    font-size: 1.2em;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    .cardTitle {
+      font-weight: bold;
+      text-decoration: underline;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .CarouselCard {
+    .carouselIn {
+      width: 30vw;
+      margin-left: 100px;
+    }
+    .carouselItem, .carouselTextIn {
+      width: 30vw;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .CarouselCard {
+    .carouselIn {
+      width: 80vw;
+      margin-left: 10vw;
+    }
+    .carouselItem, .carouselTextIn {
+      width: 80vw;
+    }
+  }
+}

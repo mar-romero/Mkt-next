@@ -1,0 +1,60 @@
+.misCursos {
+  padding: 40px 20px;
+  background-color: #7c54f7;
+  color: #ffffff;
+
+  h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .carouselItem {
+    width: 20vw;
+    text-align: center;
+    background-color: #f8f8f8;
+    color: #ffffff;
+    border: none;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    height: 250px;
+    margin-bottom: 20px;
+  }
+  .cursoCard {
+    margin-bottom: 20px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+
+    :global(.card-body) {
+      padding: 20px;
+    }
+
+    :global(.card-title) {
+      color: #ffffff;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    :global(.progress) {
+      height: 10px;
+      background-color: rgba(255, 255, 255, 0.2);
+
+      :global(.progress-bar) {
+        background-color: #ffffff;
+      }
+    }
+
+    &.completado {
+      :global(.progress-bar) {
+        background-color: #28a745;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .misCursos {
+    .cursoCard {
+      margin-bottom: 15px;
+    }
+  }
+}

@@ -1,0 +1,88 @@
+// src/components/ContentSection/ContentSection.module.scss
+.contentSection {
+  background-color: transparent;
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .mainTitle {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .tagline {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    font-weight: lighter;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .featureBox {
+    padding: 2.5rem;
+    margin: 1rem;
+    width: 100%;
+    height: 9rem;
+    position: relative;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    text-align: right;
+    background-color: transparent;
+    .imagePlaceholder {
+      width: 25%;
+      background-color: transparent;
+      margin-right: 1rem;
+      display: flex;
+
+      align-items: center;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      @media (max-width: 767px) {
+        // Esto se aplicará en pantallas de 767px o menos
+        width: 25%; // Cambia esto para que sea más pequeño en móviles
+      }
+
+      @media (min-width: 768px) {
+        // Esto se aplicará en pantallas de 768px o más
+        width: 25%; // Cambia esto para que sea 45% en tablets
+      }
+    }
+
+    p {
+      font-size: 1rem;
+      text-align: left;
+      margin-top: 1rem;
+      padding-bottom: 1rem;
+      @media (max-width: 767px) {
+        // Esto se aplicará en pantallas de 767px o menos
+        font-size: 0.6rem; // Cambia esto para que sea más pequeño en móviles
+      }
+
+      @media (max-width: 1200px) {
+        // Esto se aplicará en pantallas de 767px o menos
+        font-size: 0.8rem; // Cambia esto para que sea más pequeño en móviles
+      }
+      @media (min-width: 1420) {
+        // Esto se aplicará en pantallas de 768px o más
+        font-size: 1rem; // Cambia esto para que sea 45% en tablets
+      }
+    }
+  }
+}

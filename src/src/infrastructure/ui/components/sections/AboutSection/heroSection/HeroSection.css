@@ -1,0 +1,42 @@
+.heroSection {
+  width: 70vw; // 90% del ancho de la pantalla
+  height: auto; // altura automática para adaptarse al contenido
+  margin: 5vh auto; // 5% de la altura de la pantalla de margen en la parte superior e inferior
+  background-color: transparent;
+  display: flex;
+  flex-direction: column; // los elementos se apilan verticalmente
+  align-items: center; // centra los elementos horizontalmente
+
+  .textSection {
+    padding: 20px;
+    width: 10%; // 100% del ancho de la sección
+    font-size: 1em; // tamaño de texto normal
+  }
+
+  .title {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .description {
+    margin-bottom: 20px;
+  }
+
+  .imagePlaceholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px;
+    width: 10%; // 40% del ancho de la sección
+  }
+
+  @media (min-width: 768px) { // en pantallas de 768px o más
+    flex-direction: row; // los elementos se apilan horizontalmente
+    .textSection {
+      width: 60%; // la sección de texto ocupa el 60% del ancho
+    }
+    .imagePlaceholder {
+      width: 40%; // la imagen ocupa el 40% del ancho
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.sideMenu {
+  border-radius: 15px;
+  background-color: #1D3661;
+  padding: 20px;
+  color: #fff;
+  margin-top: 115px;
+@media (max-width: 768px) {
+    width: 90%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .sideMenuItem {
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #4E4E50;
+    }
+  }
+}

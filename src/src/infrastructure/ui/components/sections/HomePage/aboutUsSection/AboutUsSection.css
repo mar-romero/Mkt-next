@@ -1,0 +1,45 @@
+.aboutUsSection {
+  color: #fff; /* Texto en blanco */
+  padding: 60px 0;
+  text-align: center;
+  background-color: transparent; /* Fondo transparente */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+  }
+
+  .featureGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+  }
+ 
+  .feature {
+    border: none;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    background-color: transparent; /* Fondo transparente */
+
+    img {
+      max-width: 180px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 1rem;
+      margin: 0;
+    }
+  }
+}
